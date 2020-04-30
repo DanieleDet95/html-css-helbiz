@@ -1,0 +1,262 @@
+/* IMPOSTAZIONI GENERALI */
+*{
+  font-family: "Open Sans",sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.centrato{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.centrato-right{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+}
+/* FINE IMPOSTAZIONI GENERALI */
+
+/* INIZIO HEADER */
+header ul li{
+  display: inline-block;
+  font-size: 11px;
+  line-height: 60px;
+  margin-right: 5px;
+}
+header ul{
+  display: inline-block;
+}
+.menu-nascosto{
+  display: none;
+}
+.header-fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 60px;
+  background: white;
+}
+.logo-header{
+  line-height: 60px;
+}
+.logo-header img{
+  height: 13px;
+}
+.sfondo-header{
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-image: url(../img/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titolo-sfondo{
+  text-align: center;
+  color: white;
+}
+.titolo-sfondo p{
+  margin: 15px 0;
+  font-size: 12px;
+}
+.titolo-sfondo img{
+  height: 35px;
+}
+/* FINE HEADER */
+
+/* INIZIO MAIN */
+/* PERTURA CONTENITORE IMMAGINI GO E BIKE */
+main .gobike{
+  padding: 30px 0;
+}
+.go,
+.bike{
+  position: relative;
+  background: #fafafa;
+  text-align: center;
+  margin-right: 10px;
+  padding: 50px;
+}
+.go img,
+.bike img{
+  width: 100%;
+}
+.go h2,
+.bike h2{
+  font-weight: normal;
+}
+.go p,
+.bike p{
+  margin: 15px 0;
+  font-size: 18px;
+}
+.go a,
+.bike a{
+  color: blue;
+  font-size: 13px;
+}
+/* CHIUSURA CONTENITORE IMMAGINI GO E BIKE */
+
+/* PERTURA CONTENITORE BANNER */
+.banner-main{
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/HelbizBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.phone img{
+  width: 100%;
+  position: relative;
+  bottom: 150px;
+  transform: scale(1.4);
+}
+.phone .left,
+.phone .right{
+  padding-top: 8%;
+}
+.phone .right{
+  font-size: 10px;
+}
+.phone .right p{
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* CHIUSURA CONTENITORE BANNER */
+
+/* APERTURA CONTENITORE INFO */
+.info .center{
+  background-image: url(../img/ScooterHelbiz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  margin-top: -70px;
+  position: relative;
+}
+.text-right{
+  width: 30%;
+  text-align: center;
+  color: white;
+}
+.text-right h3{
+  font-size: 35px;
+}
+.text-right p{
+  font-size: 14px;
+  margin: 20px 0;
+}
+.text-right a{
+  color: white;
+}
+.info .left{
+  background-image: linear-gradient(#41566a, #26313a);
+  height: 350px;
+}
+.info .left .telefono{
+  background-image: url(../img/HelbiZAPP.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 220px;
+  position: relative;
+  top: -19px;
+}
+.info .right{
+  background-image: url(../img/Cities.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+.info .right,
+.info .left{
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.info .right h3,
+.info .left h3{
+  margin-top: 30px;
+}
+.info .right p,
+.info .left p{
+  margin: 20px 0;
+}
+/* CHIUSURA CONTENITORE INFO */
+
+/* APERTURA CONTENITORE FAMILY */
+.banner-family{
+  background-image: url(../img/Social-Banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+.box-family{
+  background: white;
+  padding: 50px 80px;
+  font-size: 20px;
+}
+.box-family ul li{
+  display: inline-block;
+  width: 22%;
+  text-align: center;
+}
+.box-family i{
+  width: 100%;
+  font-size: 27px;
+}
+/* CHIUSURA CONTENITORE FAMILY */
+
+/* FINE MAIN */
+
+/* APERTURA CONTENITORE FOOTER */
+footer .container{
+  height: 400px;
+  background: black;
+  margin-top: 20px;
+}
+/* CHIUSURA CONTENITORE FOOTER  */
+
+/* INIZIO MEDIA QUERY MOBILE */
+@media all and (max-width: 768px){
+  /* APERTURA MENU HEADER */
+  header ul.menu{
+    display: none;
+  }
+  .menu-nascosto{
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  /* APERTURA MAIN GOBIKE */
+  main .go{
+    margin-bottom: 20px;
+  }
+
+  /* APERTURA BANNER */
+  .banner-main{
+  background-position: 30%,100%;
+  }
+  .phone img{
+    width: 100%;
+    position: relative;
+    bottom: 200px;
+    transform: scale(1);
+  }
+
+  .centrato-right{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
