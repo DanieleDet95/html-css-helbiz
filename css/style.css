@@ -38,9 +38,7 @@ header ul{
 }
 
 /* MENU NASCOSTO */
-.menu-nascosto{
-  display: none;
-}
+.hamburger{display: none}
 
 /* MENU FISSO */
 .header-fixed{
@@ -297,9 +295,15 @@ hr{
   header ul.menu{
     display: none;
   }
-  .menu-nascosto{
+  header ul.lingue{
+    display: none;
+  }
+  .hamburger{
     display: inline-block;
+    float: right;
+    margin-top: 15px;
     margin-right: 20px;
+    font-size: 22px;
   }
 
   /* APERTURA MAIN GOBIKE */
