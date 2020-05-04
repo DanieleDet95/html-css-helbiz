@@ -1,47 +1,55 @@
 /* --------------------IMPOSTAZIONI GENERALI -------------------------------- */
-*{
+* {
   font-family: sans-serif;
 }
-ul{
+
+ul {
   list-style-type: none;
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
 }
-.container{
+
+.container {
   max-width: 1260px;
 }
-.centrato{
+
+.centrato {
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.centrato-right{
+
+.centrato-right {
   position: absolute;
   top: 50%;
   left: 75%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-/* ------------------- FINE IMPOSTAZIONI GENERALI --------------------------- */
 
+/* ------------------- FINE IMPOSTAZIONI GENERALI --------------------------- */
 /* --------------------------- INIZIO HEADER -------------------------------- */
-header ul li{
+header ul li {
   display: inline-block;
   font-size: 11px;
   line-height: 60px;
   margin-right: 5px;
 }
-header ul{
+
+header ul {
   display: inline-block;
 }
 
 /* MENU NASCOSTO */
-.hamburger{display: none}
+.hamburger {
+  display: none
+}
 
 /* MENU FISSO */
-.header-fixed{
+.header-fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -50,15 +58,17 @@ header ul{
   height: 60px;
   background: white;
 }
-.logo-header{
+
+.logo-header {
   line-height: 60px;
 }
-.logo-header img{
+
+.logo-header img {
   height: 13px;
 }
 
 /* SFONDO HEADER */
-.sfondo-header{
+.sfondo-header {
   position: relative;
   height: 500px;
   width: 100%;
@@ -66,83 +76,102 @@ header ul{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.titolo-sfondo{
+
+.titolo-sfondo {
   text-align: center;
   color: white;
 }
-.titolo-sfondo p{
+
+.titolo-sfondo p {
   margin: 15px 0;
   font-size: 12px;
 }
-.titolo-sfondo img{
+
+.titolo-sfondo img {
   height: 35px;
 }
+
 /* ---------------------------- FINE HEADER --------------------------------- */
-
 /* ---------------------------- INIZIO MAIN --------------------------------- */
-
 /* PERTURA CONTENITORE IMMAGINI GO E BIKE */
-main .gobike{
+.gobike {
   padding: 30px 0;
 }
+
+.gobike a:hover {
+  text-decoration: underline;
+}
+
 .go,
-.bike{
+.bike {
   position: relative;
   background: #fafafa;
   text-align: center;
   margin-right: 10px;
   padding: 50px;
 }
+
 .go img,
-.bike img{
+.bike img {
   width: 100%;
 }
+
 .go h2,
-.bike h2{
+.bike h2 {
   font-weight: 600;
   font-size: 32px;
 }
+
 .go p,
-.bike p{
+.bike p {
   margin: 15px 0;
   font-size: 18px;
 }
+
 .go a,
-.bike a{
+.bike a {
   color: blue;
   font-size: 13px;
 }
-/* CHIUSURA CONTENITORE IMMAGINI GO E BIKE */
 
+/* CHIUSURA CONTENITORE IMMAGINI GO E BIKE */
 /* PERTURA CONTENITORE BANNER */
-.banner-main{
+.banner-main {
   width: 100%;
   height: 300px;
   background-image: url(../img/HelbizBanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.phone img{
+
+.phone img {
   height: 300px;
   position: relative;
   bottom: 150px;
   transform: scale(1.5);
 }
+
 .phone .left,
-.phone .right{
+.phone .right {
   padding-top: 8%;
 }
-.phone .right{
+
+.phone .right {
   font-size: 10px;
 }
-.phone .right p{
+
+.phone .right p {
   font-weight: bold;
   margin-top: 10px;
 }
-/* CHIUSURA CONTENITORE BANNER */
 
+/* CHIUSURA CONTENITORE BANNER */
 /* APERTURA CONTENITORE INFO */
-.info .center{
+.info a:hover {
+  text-decoration: underline;
+}
+
+.info .center {
   background-image: url(../img/ScooterHelbiz.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,27 +180,32 @@ main .gobike{
   position: relative;
   margin-bottom: 20px;
 }
-.text-right{
+
+.text-right {
   width: 30%;
   text-align: center;
   color: white;
 }
-.text-right h3{
+
+.text-right h3 {
   font-size: 35px;
 }
-.text-right p{
+
+.text-right p {
   font-size: 14px;
   margin: 20px 0;
 }
-.link-white a{
+
+.link-white a {
   color: white;
 }
-.info .left{
+
+.info .left {
   background-image: linear-gradient(#41566a, #26313a);
   height: 350px;
-  margin-right: ;
 }
-.info .left .telefono{
+
+.info .left .telefono {
   background-image: url(../img/HelbiZAPP.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,30 +214,34 @@ main .gobike{
   position: relative;
   top: -9px;
 }
-.info .right{
+
+.info .right {
   background-image: url(../img/Cities.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
 }
+
 .info .right,
-.info .left{
+.info .left {
   text-align: center;
   color: white;
   margin-right: 20px;
 }
+
 .info .right h3,
-.info .left h3{
+.info .left h3 {
   padding-top: 20px;
 }
+
 .info .right p,
-.info .left p{
+.info .left p {
   margin: 20px 0;
 }
-/* CHIUSURA CONTENITORE INFO */
 
+/* CHIUSURA CONTENITORE INFO */
 /* APERTURA CONTENITORE FAMILY */
-.banner-family{
+.banner-family {
   background-image: url(../img/Social-Banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -211,94 +249,112 @@ main .gobike{
   position: relative;
   margin: 20px 0;
 }
-.box-family{
+
+.box-family {
   background: white;
   padding: 50px 80px;
   font-size: 20px;
 }
-.box-family ul li{
+
+.box-family ul li {
   display: inline-block;
   width: 22%;
   text-align: center;
 }
-.box-family i{
+
+.box-family i {
   width: 100%;
   font-size: 27px;
 }
+
 /* CHIUSURA CONTENITORE FAMILY */
-
 /* ----------------------------- FINE MAIN -----------------------------------*/
-
 /* --------------------------- APERTURA FOOTER ------------------------------ */
-footer{
+footer {
   background: black;
 }
-hr{
+
+hr {
   width: 70%;
   margin: auto;
 }
 
 /* FOOTER TOP */
-.container-footer-top{
+.container-footer-top {
   color: white;
   background: black;
   padding-top: 90px;
   padding-bottom: 30px;
 }
-.container-footer-top a{
+
+.container-footer-top a {
   color: gray;
 }
+
 .product-footer li,
 .info-footer li,
-.helbiz-footer li{
+.helbiz-footer li {
   margin-bottom: 15px;
 }
 
 /* FOOTER BOTTOM */
-.container-footer-bottom{
+.container-footer-bottom {
   padding: 30px 0;
   background: black;
 }
-.container-footer-bottom a{
+
+.container-footer-bottom a {
   color: white;
   font-size: 12px;
 }
-.social-footer a{
+
+.social-footer a {
   color: white;
   font-size: 20px;
 }
-.social-footer li{
+
+.social-footer li {
   display: inline-block;
   margin-right: 10px;
 }
 
 /* APP STORE FOOTER */
-.store-footer{
+.store-footer {
   text-align: center;
   padding: 30px;
 }
-.store-footer img{
+
+.store-footer img {
   margin: auto;
   height: 40px;
   margin-right: 10px;
 }
-.video{
+
+.video {
   width: 100%;
   height: 300px;
 }
-/* --------------------------- CHIUSURA FOOTER ------------------------------ */
 
+/* --------------------------- CHIUSURA FOOTER ------------------------------ */
 /* ----------------------  INIZIO MEDIA QUERY MOBILE ------------------------ */
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) {
+  .menu {
+    display: none;
+    background: white;
+    width: 780px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    text-align: left;
+    padding-left: 50px;
+  }
 
   /* APERTURA MENU HEADER */
-  header ul.menu{
+  header ul.lingue {
     display: none;
   }
-  header ul.lingue{
-    display: none;
-  }
-  .hamburger{
+
+  .hamburger {
     display: inline-block;
     float: right;
     margin-top: 15px;
@@ -306,16 +362,22 @@ hr{
     font-size: 22px;
   }
 
+  /* APERTURA MENU NASCOSTO */
+  .hamburger:hover .menu {
+    display: block;
+  }
+
   /* APERTURA MAIN GOBIKE */
-  main .go{
+  main .go {
     margin-bottom: 20px;
   }
 
   /* APERTURA BANNER */
-  .banner-main{
-  background-position: 30%,100%;
+  .banner-main {
+    background-position: 30%, 100%;
   }
-  .phone img{
+
+  .phone img {
     height: 300px;
     position: relative;
     bottom: 150px;
@@ -323,59 +385,68 @@ hr{
   }
 
   /* APERTURA INFO */
-  .centrato-right{
+  .centrato-right {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
+
   .info .right,
-  .info .left{
+  .info .left {
     margin-right: 0px;
   }
-  .info .right{
+
+  .info .right {
     margin-top: 20px;
   }
 
   /* APERTURA FOOTER */
-  .container-footer-top{
+  .container-footer-top {
     text-align: left;
     padding-top: 0px;
     padding-left: 20px;
   }
-  .container-footer-top img{
+
+  .container-footer-top img {
     padding-top: 50px;
     width: 150px;
   }
-  .container-footer-bottom{
+
+  .container-footer-bottom {
     text-align: left;
     padding: 20px;
   }
-  .container-footer-bottom span{
+
+  .container-footer-bottom span {
     margin-top: 15px;
     display: inline-block;
   }
-  hr{
+
+  hr {
     width: 100%;
   }
+
   .product-footer h3,
   .info-footer h3,
-  .helbiz-footer h3{
+  .helbiz-footer h3 {
     margin-top: 30px;
   }
 }
-/* ----------------------- FINE MEDIA QUERY MOBILE -------------------------- */
 
+/* ----------------------- FINE MEDIA QUERY MOBILE -------------------------- */
 /* ----------------------  INIZIO MEDIA QUERY TABLET ------------------------ */
-@media all and (min-width: 769px) and (max-width: 992px){
-  .phone img{
+@media all and (min-width: 769px) and (max-width: 992px) {
+  .phone img {
     height: 300px;
     position: relative;
     bottom: 150px;
     transform: scale(1.5);
   }
-  .logo-footer{
+
+  .logo-footer {
     padding-bottom: 50px;
   }
 }
+
 /* ------------------------ FINE MEDIA QUERY TABLET ------------------------- */
